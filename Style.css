@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+}
+
+#header {
+  background-color: grey;
+  color: white;
+  text-align: center;
+  margin-top: 0;
+  padding: 0.1px;
+  font-size: 25px;
+}
+
+footer {
+  position: relative;
+  margin-bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-top: 10;
+  font-size: 20px;
+}
+
+.navbar {
+  margin: 0;
+  background-color: rgb(188, 182, 182);
+}
+
+.navbar li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+}
+
+.navbar li:hover {
+  background-color: rgb(134, 133, 133);
+}
+
+#drop1 {
+  display: none;
+  background-color: white;
+  color: rgb(67, 67, 217);
+  margin-top: 0.27cm;
+  margin-left: -0.2cm;
+  padding: 0;
+  width: 119px;
+  max-width: 150px;
+  position: absolute;
+  z-index: 1;
+}
+
+#drop2 {
+  display: none;
+  background-color: white;
+  color: rgb(67, 67, 217);
+  margin-top: 0.27cm;
+  margin-left: -0.22cm;
+  padding: 0;
+  width: 100px;
+  ;
+  max-width: 150px;
+  position: absolute;
+  z-index: 1;
+
+}
+
+
+#drop1 li,
+#drop2 li {
+  display: block;
+  margin: 0;
+  padding: 10px;
+}
+
+#drop1 ul,
+#drop2 ul {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li:nth-child(2):hover #drop1,
+.navbar li:nth-child(3):hover #drop2 {
+  display: block;
+  background-color: rgb(214, 214, 214);
+}
+
+.image_section_1 img {
+  display: inline-block;
+
+}
+
+/*Image animation*/
+#offers {
+  margin: 0px;
+  width: 100%;
+  height: 500px;
+  border: 5px solid steelblue;
+  box-sizing: border-box;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  animation: offersImg 20s ease 0s infinite normal;
+}
+
+#offers img {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes offersImg {
+  0% {
+    background-image: url(./../Images/Animation/ani1.jpg);
+  }
+
+  25% {
+    background-image: url(./../Images/Animation/ani2.png);
+  }
+
+  50% {
+    background-image: url(./../Images/Animation/ani3.jpg);
+  }
+
+  75% {
+    background-image: url(./../Images/Animation/ani4.jpg);
+  }
+
+  100% {
+    background-image: url(./../Images/Animation/ani5.jpg);
+  }
+
+}
+
+
+
+/*covid Care section*/
+
+.subheading {
+  padding: 1%;
+  margin-bottom: auto;
+}
+
+.covidcare {
+  display: flex;
+  justify-content: space-around;
+  /* Distribute items evenly */
+  flex-wrap: wrap;
+  /* Allow items to wrap to the next line */
+  padding: 10px;
+}
+
+.cckit {
+  position: relative;
+  background-color: rgb(229, 222, 222);
+  height: 400px;
+  /* Example height */
+  width: 350px;
+  /* Example width */
+  border: 1px solid black;
+  /* For visual reference */
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+}
+
+.cctxt {
+  position: absolute;
+  top: 10px;
+  /* Adjust top position */
+  left: 10px;
+  /* Adjust left position */
+  margin: 0;
+  padding: 5px;
+  /* Optional: adjust padding as needed */
+}
+
+.ccimg {
+  max-width: 100%;
+  height: fit-content;
+  /* Maintain aspect ratio */
+  align-self: center;
+  position: relative;
+  /* Ensure relative positioning */
+  top: -30px;
+  /* Adjust top position to move it slightly above */
+}
+
+.subtext1 {
+  position: absolute;
+  top: 75%;
+  /* Adjust top position */
+  left: 5px;
+  margin: 0;
+  color: rgb(0, 153, 255);
+}
+
+.subtext2 {
+  position: absolute;
+  top: 80%;
+  /* Adjust top position */
+  left: 5px;
+  margin: 0;
+  color: rgb(0, 153, 255);
+}
+
+.a2c {
+  position: absolute;
+  bottom: 10px;
+  /* Adjust bottom position */
+  width: calc(100% - 50px);
+  /* Ensure the button spans the width minus padding */
+  border: 2px solid blue;
+  /* Add blue borders */
+  border-radius: 10px;
+  /* Round the borders */
+  padding: 10px;
+  background-color: rgb(158, 158, 196);
+  color: rgb(235, 225, 92);
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+
+.dcimg {
+  max-width: 70%;
+  height: fit-content;
+  /* Maintain aspect ratio */
+  align-self: center;
+  position: relative;
+  /* Ensure relative positioning */
+  top: -30px;
+  /* Adjust top position to move it slightly above */
+}
+
+.cckit .a2c:hover {
+  background-color: white;
+}
